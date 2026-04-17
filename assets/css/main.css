@@ -1,0 +1,84 @@
+/* বেসিক কিছু স্টাইল */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+.footer-title {
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #0d6efd;
+}
+
+.featured-slider {
+    width: 100%;
+    height: 60vh; /* স্ক্রিনের ৬০% উচ্চতা নিবে */
+    height: 500px !important;
+    min-height: 400px;
+}
+
+.slider-item {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background: rgba(0,0,0,0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0d6efd !important;
+}
+
+/* মেইন নেভিগেশন মেনু স্টাইল */
+.main-navigation ul li a {
+    color: #ffffff !important;      /* সাদা রং */
+    text-decoration: none !important; /* আন্ডারলাইন ছাড়া */
+    font-size: 18px;                /* ফন্ট সাইজ বড় করা */
+    font-weight: 500;               /* ফন্ট একটু মোটা করা */
+    padding: 10px 15px;             /* ডানে-বামে একটু জায়গা */
+    transition: all 0.3s ease;      /* পরিবর্তনের সময় স্মুথ ইফেক্ট */
+}
+
+/* মাউস নিলে (Hover) কি হবে */
+.main-navigation ul li a:hover {
+    color: #f8f9fa !important;      /* হোভার করলে হালকা অফ-হোয়াইট */
+    opacity: 0.8;                   /* হালকা একটু স্বচ্ছ ভাব */
+}
+
